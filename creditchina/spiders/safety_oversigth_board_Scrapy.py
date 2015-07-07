@@ -18,6 +18,7 @@ class CreditChina(Spider):
     从信用中国网站上爬取安监局的数据
     """
     name = 'safety'
+    download_delay = 1
     start_urls = ['http://www.creditchina.gov.cn/channel_record?t=']
     def __init__(self):
         self.data = {} 
